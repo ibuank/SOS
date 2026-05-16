@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>大人向けSOS</title>
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="adult-page">
+
+<header>
+
+    <h1>
+        大人向けSOS
+    </h1>
+
+</header>
+
+<main>
+
+    <button class="sos-btn" onclick="showSOS()">
+        SOS表示
+    </button>
+
+    <button class="alarm-btn" onclick="playAlarm(this)">
+        防犯ブザー
+    </button>
+
+    <button
+    class="location-btn" onclick="openMapLocation()">
+    現在地を地図で開く
+    </button>
+
+    <p id="location-text"></p>
+
+    <a href="../index.html" class="back-btn">
+        戻る
+    </a>
+
+</main>
+
+<!-- SOS画面 -->
+<div id="sos-screen">
+
+    <p>
+        助けてください
+    </p>
+
+</div>
+
+<!-- 音 -->
+<audio id="alarm-sound">
+    <source src="../audio/alarm.mp3" type="audio/mpeg">
+</audio>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
